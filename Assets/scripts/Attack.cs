@@ -72,6 +72,7 @@ public class Attack : MonoBehaviour
                         //play anim 
                         cp.comboNumber = 0;
                         vd.hp = vd.hp - 0.335f;
+                        Destroy(other.transform.gameObject);
                     }
                     else
                     {
