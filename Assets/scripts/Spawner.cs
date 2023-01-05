@@ -28,7 +28,7 @@ public class Spawner : MonoBehaviour
             compteur -= Time.deltaTime;
             if (compteur <= 0)
             {
-                var hauteur = Random.Range(-4, 1);
+                var hauteur = Random.Range(-4f, -1.5f);
                 var hostilite = Random.Range(0, 4);
                 EnnemiScript clone = Instantiate(objetASpawner, parent.position, parent.rotation);
                 if (hostilite == 0)

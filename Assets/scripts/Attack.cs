@@ -20,7 +20,7 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(player.transform.position, player.transform.right * 5f);
+        Debug.DrawRay(player.transform.position, player.transform.right * 3f);
     }
     public void OnTouch()
     {
