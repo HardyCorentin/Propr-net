@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DetectObject : MonoBehaviour
 {
-
+    public Vector3 point;
     public GameObject currentTouchedObject;
 
     void Update()
@@ -13,7 +13,7 @@ public class DetectObject : MonoBehaviour
         {
             
             var tempVector = new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, Camera.main.nearClipPlane);//On recupere la position du doigt
-                                                                                                                      
+            point = tempVector;                                                                                                          
             var tempRay = Camera.main.ScreenPointToRay(tempVector); // On Converti la position du doigt en rayon qui va vers l'avant dans le mondedu jeu
             
             RaycastHit tempHit; //On cr�e un ensemble d'info de raycast 
