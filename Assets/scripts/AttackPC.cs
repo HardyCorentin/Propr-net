@@ -6,6 +6,8 @@ public class AttackPC : MonoBehaviour
 {
     public GameObject player;
     public int countdown = 0;
+    public GameObject coup_fx;
+    private Animator animFX;
 
     // Start is called before the first frame update
     void Start()
@@ -29,9 +31,16 @@ public class AttackPC : MonoBehaviour
                     countdown = countdown + 1;
                     if (countdown >= 2)
                     {
-                        Debug.Log("AH");
+                        GameObject FX= Instantiate(coup_fx, player.transform.position, player.transform.rotation); 
+                        animFX = FX.GetComponent<Animator>();
+                        animFX.Play();
+                        /*if (animFX.isPlaying = false)
+                        {
+                            Destroy(FX);
+                        }*/
                         Destroy(other.transform.gameObject);
                     }
+
                 }
             }
 

@@ -2268,6 +2268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1801384566}
   countdown: 0
+  coup_fx: {fileID: 0}
 --- !u!4 &1801384583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8088937347052202259, guid: 53d4e992ac34b084aa9d2d6ef7f6f095, type: 3}
