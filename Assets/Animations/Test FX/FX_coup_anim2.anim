@@ -8,7 +8,7 @@ AnimationClip:
   m_PrefabAsset: {fileID: 0}
   m_Name: FX_coup_anim2
   serializedVersion: 6
-  m_Legacy: 0
+  m_Legacy: 1
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
@@ -91,46 +91,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-    pptrCurveMapping:
-    - {fileID: 207003390, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -400139185, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 2131637730, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -2764942, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -21230609, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 217790568, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1305287430, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 703825562, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 199570047, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 12937334, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 17142187, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1066595270, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -1522212963, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -1878038059, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -270475233, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -663194785, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1374094663, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1017775310, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 2108577863, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1381424586, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 651342944, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 651342944, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -1149538414, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1827899007, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -577870582, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1244767917, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: -641466152, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 1787711020, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 202377824, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 609257161, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
-    - {fileID: 207003390, guid: 04a44e3f298521b4c9b85f079a75aba7, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

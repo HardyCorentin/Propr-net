@@ -7,17 +7,20 @@ public class AttackPC : MonoBehaviour
     public GameObject player;
     public int countdown = 0;
     public GameObject coup_fx;
-    private Animator animFX;
+    private Animation animFX;
 
     // Start is called before the first frame update
     void Start()
     {
+        coup_fx.SetActive(false);
+        animFX = coup_fx.GetComponent<Animation>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(animFX.isPlaying);
         Debug.DrawRay(player.transform.position, player.transform.right * 5f);
         if (Input.GetKey(KeyCode.Space))
         {
@@ -31,14 +34,15 @@ public class AttackPC : MonoBehaviour
                     countdown = countdown + 1;
                     if (countdown >= 2)
                     {
-                        GameObject FX= Instantiate(coup_fx, player.transform.position, player.transform.rotation); 
-                        animFX = FX.GetComponent<Animator>();
-                        animFX.Play();
-                        /*if (animFX.isPlaying = false)
-                        {
-                            Destroy(FX);
-                        }*/
+                        coup_fx.transform.position = player.transform.position;
+                        coup_fx.SetActive(true);
+                        
+                        animFX.Play("FX_coup_anim2");
                         Destroy(other.transform.gameObject);
+                        if (animFX.isPlaying==false)
+                        {
+                            coup_fx.SetActive(false);
+                        }
                     }
 
                 }
