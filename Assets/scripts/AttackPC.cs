@@ -9,6 +9,7 @@ public class AttackPC : MonoBehaviour
     public GameObject coup_fx;
     private Animation animFX;
 
+
     // Start is called before the first frame update
     void Start()
     {
