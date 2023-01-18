@@ -4,46 +4,52 @@ using UnityEngine;
 
 public class MoveToPoint : MonoBehaviour
 {
-    public GameObject currentTouchedObject;
-    public GameObject player;
+     public GameObject player;
     public DetectObject dO;
+    private Vector3 targetPosition;
     // Start is called before the first frame update
     void Start()
     {
-        
+        targetPosition = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        player.transform.position = Vector3.MoveTowards(player.transform.position, targetPosition,0.05f); ;
+
     }
-    public void onTouch()
+    public void OnTouch(Vector3 raycastHitPosition)
     {
-        if(player.transform.position.x<dO.transform.position.x)
+        Debug.Log("Le touch marche");
+        targetPosition = raycastHitPosition;
+        Debug.LogWarning("mon raycast a touché a" + raycastHitPosition);
+        if (player.transform.position.x<dO.currentTouchedObject.transform.position.x)
         {
             player.GetComponent<VictoryorDefeat>().side = false;
             player.GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
-            player.GetComponent<VictoryorDefeat>().side = false;
+            player.GetComponent<VictoryorDefeat>().side = true;
             player.GetComponent<SpriteRenderer>().flipX = false;
         }
-        player.transform.position = Vector3.MoveTowards(transform.position, dO.transform.position, 2f); ;
+
     }
     public void OnMouseDown()
     {
-        if (player.transform.position.x < dO.transform.position.x)
+        Debug.Log("Le click");
+        targetPosition = Input.mousePosition;
+        //Debug.LogWarning("mon raycast a touché a" + raycastHitPosition);
+        if (player.transform.position.x < dO.currentTouchedObject.transform.position.x)
         {
             player.GetComponent<VictoryorDefeat>().side = false;
             player.GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
-            player.GetComponent<VictoryorDefeat>().side = false;
+            player.GetComponent<VictoryorDefeat>().side = true;
             player.GetComponent<SpriteRenderer>().flipX = false;
         }
-        player.transform.position = Vector3.MoveTowards(transform.position, dO.transform.position, 2f); ;
     }
 }
