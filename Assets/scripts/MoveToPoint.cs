@@ -32,4 +32,18 @@ public class MoveToPoint : MonoBehaviour
         }
         player.transform.position = Vector3.MoveTowards(transform.position, dO.transform.position, 2f); ;
     }
+    public void OnMouseDown()
+    {
+        if (player.transform.position.x < dO.transform.position.x)
+        {
+            player.GetComponent<VictoryorDefeat>().side = false;
+            player.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            player.GetComponent<VictoryorDefeat>().side = false;
+            player.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        player.transform.position = Vector3.MoveTowards(transform.position, dO.transform.position, 2f); ;
+    }
 }
