@@ -17,13 +17,18 @@ public class MoveTP : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(player.transform.position, targetPosition, 0.1f);
-    }
+        /*if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("clikclak");
+            targetPosition = Input.mousePosition;
+            player.transform.position = targetPosition;
 
-    void OnMouseDown()
+        }*/
+    }
+    public void onTouch()
     {
-        Debug.Log("clikclak");
         targetPosition = Input.mousePosition;
         player.transform.position = targetPosition;
-
     }
+
 }
