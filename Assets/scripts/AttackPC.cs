@@ -7,6 +7,7 @@ public class AttackPC : MonoBehaviour
     public GameObject player;
     public int countdown = 0;
     public ParticleSystem particleSystem;
+    public ParticleSystem voix;
 
 
     // Start is called before the first frame update
@@ -31,6 +32,8 @@ public class AttackPC : MonoBehaviour
                     countdown = countdown + 1;
                     if (countdown >= 2)
                     {
+                        voix.transform.position = player.transform.position + new Vector3(0.044f,1.206f,0.33f);
+                        voix.Play();
                         particleSystem.transform.position = other.point;
                         particleSystem.Play();
 
@@ -47,7 +50,8 @@ public class AttackPC : MonoBehaviour
                     countdown = countdown + 1;
                     if (countdown >= 2)
                     {
-                        Debug.Log("AH");
+                        particleSystem.transform.position = other.point;
+                        particleSystem.Play();
                         Destroy(other.transform.gameObject);
                     }
                 }
