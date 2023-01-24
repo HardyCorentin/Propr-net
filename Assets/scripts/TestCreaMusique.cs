@@ -9,4 +9,5 @@ public class TestCreaMusique : ScriptableObject
     public int bpm;
     public string nom;
     public string nomArtiste;
+    public Sprite jaquette;
 }

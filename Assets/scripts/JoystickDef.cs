@@ -4,30 +4,48 @@ using UnityEngine;
 
 public class JoystickDef : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
     public float speed = 0.02f;
     private bool debutTouche = false;
     public Vector2 pointA;
     public Vector2 pointB;
-    public Transform cercle;
-    public Transform cercleExterieur;
+    public GameObject cercle;
+    public GameObject cercleExterieur;
     public bool dir = true;
+    public Vector2 startPos;
+    private Touch touch;
 
     // Start is called before the first frame update
     void Start()
     {
-        pointA = new Vector2(cercle.position.x, cercle.position.y);
-        pointB = new Vector2(cercle.position.x, cercle.position.y);
+        pointA = new Vector2(cercle.transform.position.x, cercle.transform.position.y);
+        pointB = new Vector2(cercle.transform.position.x, cercle.transform.position.y);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(pointB.x);
-        if (Input.GetMouseButtonDown(0))
+         if (Input.touchCount > 0)
         {
+            Touch touch = Input.GetTouch(0);
 
+            // Handle finger movements based on touch phase.
+            switch (touch.phase)
+            {
+                // Record initial touch position.
+                case TouchPhase.Began:
+                
+                    debutTouche = true;
+                    pointB = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, Camera.main.transform.position.z));
+                    break;
+                // Report that a direction has been chosen when the finger is lifted.
+                case TouchPhase.Ended:
+                debutTouche=false;
+                    cercle.transform.position = pointA;
+                    break;
+            }
         }
+
         if (Input.GetMouseButton(0)) {
             debutTouche = true;
             pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
@@ -40,15 +58,25 @@ public class JoystickDef : MonoBehaviour
         if (debutTouche) {
             Vector2 offset = pointB - pointA;
             Vector2 direction = Vector2.ClampMagnitude(offset, 1.0f);
+            //Debug.Log(offset);
+            if (offset.x <= 0)
+            {
+                player.GetComponent<VictoryorDefeat>().side = false;
+                player.GetComponent<SpriteRenderer>().flipX = true;
+                
+            }
+            if (offset.x > 0)
+                {   
+                    player.GetComponent<VictoryorDefeat>().side = true;
+                    player.GetComponent<SpriteRenderer>().flipX = false;
+                }
             MouvementPerso(direction * 1);
             cercle.transform.position = new Vector2(pointB.x, pointB.y);
-            cercle.transform.position = pointA + Vector2.ClampMagnitude(offset, 1.0f); //Le problème vient de là
+            cercle.transform.position = pointA + Vector2.ClampMagnitude(offset, 1.0f); //Le problï¿½me vient de lï¿½
         }
         if (pointB.x < 0)
-        {
-            player.GetComponent<VictoryorDefeat>().side = false;
-            player.GetComponent<SpriteRenderer>().flipX = true;
-            if (player.transform.position.x < -3.6f)
+
+            /*if (player.transform.position.x < -3.6f)
             {
 
                 player.transform.position = new Vector3(player.transform.position.x + 0f, player.transform.position.y, 0f);
@@ -56,14 +84,12 @@ public class JoystickDef : MonoBehaviour
             else if (player.transform.position.x > -3.6f)
             {
                 player.transform.position = new Vector3(player.transform.position.x + -speed, player.transform.position.y, 0f);
-            }
+            }*/
 
            if (pointB.x > 0)
             {
 
-                player.GetComponent<VictoryorDefeat>().side = true;
-                player.GetComponent<SpriteRenderer>().flipX = false;
-                if (player.transform.position.x > 6f)
+                /*if (player.transform.position.x > 6f)
                 {
 
                     player.transform.position = new Vector3(player.transform.position.x + 0f, player.transform.position.y, 0f);
@@ -71,12 +97,12 @@ public class JoystickDef : MonoBehaviour
                 else
                 {
                     player.transform.position = new Vector3(player.transform.position.x + speed, player.transform.position.y, 0f);
-                }
+                }*/
             }
             //MouvementPerso(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
         }
 
-        void OnTouch()
+       /* void OnTouch()
         {
 
             debutTouche = true;
@@ -87,11 +113,13 @@ public class JoystickDef : MonoBehaviour
         void TouchUp()
         {
             debutTouche = false;
-        }
+        }*/
 
         void MouvementPerso(Vector2 direction)
         {
-            player.Translate(direction * speed);
+            
+            player.transform.Translate(direction * speed);
+            
         }
     }
-}
+

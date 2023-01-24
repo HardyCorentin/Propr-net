@@ -19,14 +19,12 @@ public class Move : MonoBehaviour
     }
 
     void Update(){
-        Debug.Log(up);
     }
 
     public void OnTouch()
     {
         if (direction == 1)
         {
-            Debug.Log("Mooove to left");
             player.GetComponent<VictoryorDefeat>().side = false;
             player.GetComponent<SpriteRenderer>().flipX = true;
             if (player.transform.position.x < -3.6f)
@@ -43,7 +41,6 @@ public class Move : MonoBehaviour
         {
             player.GetComponent<VictoryorDefeat>().side = true;
             player.GetComponent<SpriteRenderer>().flipX = false;
-            Debug.Log("Mooove to right");
             if (player.transform.position.x > 6f)
             {
 
@@ -59,7 +56,6 @@ public class Move : MonoBehaviour
 
         if (direction == 3)
         {
-            Debug.Log("Mooove UP");
             if (player.transform.position.y > 0f)
             {
                 player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 0f, 0f);
@@ -72,7 +68,6 @@ public class Move : MonoBehaviour
         }
         if (direction == 4)
         {
-            Debug.Log("DOWN");
             if (player.transform.position.y < -4f)
             {
                 player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 0f, 0f);
@@ -89,8 +84,6 @@ public class Move : MonoBehaviour
 
     public void TouchUp()
     {
-        Debug.Log("Touched Ended with " + player);
-        Debug.Log("JesuisPlustouche");
     }
 
 

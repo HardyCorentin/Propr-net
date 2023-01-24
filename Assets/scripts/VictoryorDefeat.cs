@@ -22,14 +22,14 @@ public class VictoryorDefeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        Debug.Log(side);
         if(hp <= 0f)
         {
             SceneManager.LoadScene(loseScene);
         }
         if (source.isPlaying == false)
         {
-            Debug.Log("Gagné");
+            Debug.Log("Gagnï¿½");
             SceneManager.LoadScene(winScene);
         }
     }

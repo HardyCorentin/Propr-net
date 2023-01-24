@@ -16,3 +16,4 @@ MonoBehaviour:
   bpm: 120
   nom: VoidLoop
   nomArtiste: BIRRD
+  jaquette: {fileID: 21300000, guid: 1564b8f5f48aad349b7e95a1510d7ae0, type: 3}

@@ -22,6 +22,7 @@ public class ListeNiveaux : MonoBehaviour
             Debug.Log(listeniv.Count);
             Debug.Log("ffezfezfezfez");
             var newObject = Instantiate(panneau, new Vector2(xPan, yPan), Quaternion.identity);
+            newObject.GetComponent<SpriteRenderer>().sprite = listeniv[i].jaquette;
             xPan = xPan + 6.75f;
             var newText = Instantiate(nomMusique, new Vector2(xTit, 3.5f), Quaternion.identity);
             xTit = xTit + 6.75f;

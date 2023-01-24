@@ -46,7 +46,7 @@ public class DetectObject : MonoBehaviour
             ////////////////////////////////////////////////
             if (componentAttackOfGameObject != null) 
             {
-                componentAttackOfGameObject.OnTouch();
+                componentAttackOfGameObject.Update();
                 Debug.Log("BBBBBBBBBBBBBBBBBBH");
             }
             ///////////////////////////////////////////////
