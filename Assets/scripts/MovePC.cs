@@ -12,6 +12,7 @@ public class MovePC : MonoBehaviour
     public bool left;
     public bool up;
     public bool dir = true;
+    public Animator moveAnim;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class MovePC : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
          
         {
+            moveAnim.Play("finalSVP");
             player.GetComponent<SpriteRenderer>().flipX = true;
             transform.position = new Vector2(player.transform.position.x - move, player.transform.position.y + 0f);
             dir = false;
