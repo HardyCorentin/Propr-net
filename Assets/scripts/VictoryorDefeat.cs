@@ -25,12 +25,12 @@ public class VictoryorDefeat : MonoBehaviour
         Debug.Log(side);
         if(hp <= 0f)
         {
-            SceneManager.LoadScene(loseScene);
+            SceneManager.LoadSceneAsync(loseScene);
         }
         if (source.isPlaying == false)
         {
             Debug.Log("Gagn�");
-            SceneManager.LoadScene(winScene);
+            SceneManager.LoadSceneAsync(winScene);
         }
     }
 }

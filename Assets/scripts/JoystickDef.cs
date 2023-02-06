@@ -23,7 +23,7 @@ public class JoystickDef : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
          if (Input.touchCount > 0)
         {
@@ -72,8 +72,9 @@ public class JoystickDef : MonoBehaviour
                 }
             MouvementPerso(direction * 1);
             cercle.transform.position = new Vector2(pointB.x, pointB.y);
-            cercle.transform.position = pointA + Vector2.ClampMagnitude(offset, 1.0f); //Le probl�me vient de l�
+            cercle.transform.position = pointA + Vector2.ClampMagnitude(offset, 1.0f); //Le probl�me vient plus du tout de l�
         }
+        
         if (pointB.x < 0)
 
             /*if (player.transform.position.x < -3.6f)
@@ -119,7 +120,22 @@ public class JoystickDef : MonoBehaviour
         {
             
             player.transform.Translate(direction * speed);
-            
-        }
+            if (player.transform.position.y >=1.5f)
+            {
+                player.transform.Translate(direction * -0.07f);
+            }
+            if (player.transform.position.y <= -5f)
+            {
+                player.transform.Translate(direction * -0.07f);
+            }
+            if (player.transform.position.x <= -9f)
+            {
+                player.transform.Translate(direction * -0.07f);
+            }
+            if (player.transform.position.x >= 13f)
+            {
+                player.transform.Translate(direction * -0.07f);
+            }
+    }
     }
 

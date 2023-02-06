@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public EnnemiScript objetASpawner;
+    public TrashScript garbage;
     public float tempsRespawn;
     public Transform parent;
     public float compteur;
@@ -39,6 +40,7 @@ public class Spawner : MonoBehaviour
                 if (hostilite == 1 || hostilite == 2 || hostilite == 3)
                 {
                     clone.GetComponent<EnnemiScript>().hostile = true;
+
                 }
 
 

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,7 +139,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f9caabec5908f4092b2aff65e847ce
+      internalID: 675866399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 492
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f65aee62aa42749a5a4c5a746c5250
+      internalID: -1887225580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 492
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2046fc317c0d69545a613238bb0a888f
+      internalID: -1316698409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 492
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be797c65478dd343a05b190d1b7343f
+      internalID: -693345780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1eaf4502ae9284b957f504b40b57a0
+      internalID: -1283325919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 392
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c472b9b771f0544f882baed17a62ac7
+      internalID: -1511842467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 392
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52aa6b80cb5407498b3443904c50339
+      internalID: 1367962331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f61b6c880fac14483b12feffe65549
+      internalID: 1929723168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a66234d68a39254fb0054986b038119
+      internalID: 180070246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 292
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b459d6b419526cb4784ad5faf990a16b
+      internalID: 1445093074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 292
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf547fb912a1ff4790df17029fa94dc
+      internalID: -782285190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_pineken_vide_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 292
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373e11e472492c547a060ec7b65c0498
+      internalID: 1223132352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -150,7 +402,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet_pineken_vide_2: -1316698409
+      spritesheet_pineken_vide_0: 675866399
+      spritesheet_pineken_vide_7: 1929723168
+      spritesheet_pineken_vide_10: -782285190
+      spritesheet_pineken_vide_3: -693345780
+      spritesheet_pineken_vide_5: -1511842467
+      spritesheet_pineken_vide_1: -1887225580
+      spritesheet_pineken_vide_11: 1223132352
+      spritesheet_pineken_vide_6: 1367962331
+      spritesheet_pineken_vide_4: -1283325919
+      spritesheet_pineken_vide_8: 180070246
+      spritesheet_pineken_vide_9: 1445093074
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

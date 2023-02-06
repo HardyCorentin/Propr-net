@@ -9,6 +9,6 @@ public class GoToSCENE : MonoBehaviour
     public string nextSceneName;
     public void OnTouch()
     {
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadSceneAsync(nextSceneName);
     }
 }
