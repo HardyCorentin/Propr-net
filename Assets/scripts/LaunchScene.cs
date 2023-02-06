@@ -24,7 +24,7 @@ public class LaunchScene : MonoBehaviour
 
     public void OnMouseDown()
     {
-        Debug.Log("fswfesfeffs");
+
         PlayerPrefs.SetInt("choix", index);
         //DontDestroyOnLoad(conserve);
         SceneManager.LoadScene("SampleScene");
@@ -34,7 +34,7 @@ public class LaunchScene : MonoBehaviour
     public void OnTouch()
     {
 
-        Debug.Log("fswfesfeffs");
+
         PlayerPrefs.SetInt("choix", index);
         //DontDestroyOnLoad(conserve);
         SceneManager.LoadScene(nextSceneName);

@@ -22,8 +22,7 @@ public class DetectObject : MonoBehaviour
             {//on lance le raycast et on lui dit de remplire les infos avec ce qu'il touche
 
                 currentTouchedObject = tempHit.collider.gameObject; //On recupere le game object touch� depuis les infos
-                Debug.Log(currentTouchedObject);
-                Debug.Log(tempHit);
+
             }
 
             var componentMoveOfGameObject = currentTouchedObject.GetComponent<Move>(); //On recupere le component move de l'objet
@@ -37,7 +36,7 @@ public class DetectObject : MonoBehaviour
             if ( componentMoveOfGameObject != null ) //Si le component move Existe
                 
             {
-                Debug.Log("Ca marche");
+  
                 //Alors on fait des trucs 
                 componentMoveOfGameObject.OnTouch();
 
@@ -47,7 +46,7 @@ public class DetectObject : MonoBehaviour
             if (componentAttackOfGameObject != null) 
             {
                 componentAttackOfGameObject.Update();
-                Debug.Log("BBBBBBBBBBBBBBBBBBH");
+
             }
             ///////////////////////////////////////////////
             if (componentGoToSceneOfGameObject != null){
@@ -84,17 +83,17 @@ public class DetectObject : MonoBehaviour
             /// //////////////////////////////
             if (currentTouchedObject != null)
             {
-                Debug.Log("BANANAAAAAAAAAAAAAAA8");
+
                 var componentMoveOfGameObject = gameObject.GetComponent<Move>(); //On recupere le component move de l'objet
-                Debug.Log("BANANAAAAAAAAAAAAAAA9");
+
                 if (componentMoveOfGameObject != null)
 
                 {
-                    Debug.Log("BANANAAAAAAAAAAAAAAA10");
+
                     componentMoveOfGameObject.TouchUp();
                 }
                 else{
-                    Debug.Log("BANANAAAAAAAAAAAAAAA11");
+
                     currentTouchedObject = null;
                 }
             }

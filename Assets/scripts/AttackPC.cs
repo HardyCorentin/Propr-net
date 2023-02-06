@@ -28,7 +28,6 @@ public class AttackPC : MonoBehaviour
                 
                 if (Physics.Raycast(player.transform.position, player.transform.right, out var other, 5f))
                 {
-                    Debug.Log("click");
                     countdown = countdown + 1;
                     if (countdown >= 2)
                     {

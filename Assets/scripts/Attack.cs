@@ -23,12 +23,13 @@ public class Attack : MonoBehaviour
     public void Update()
     {
         Debug.DrawRay(player.transform.position, player.transform.right * 5f);
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 1)
         {
-            Touch touch = Input.GetTouch(1);
+            
+            Touch touch1 = Input.GetTouch(1);
 
             // Handle finger movements based on touch phase.
-            switch (touch.phase)
+            switch (touch1.phase)
             {
                 // Record initial touch position.
                 case TouchPhase.Began:

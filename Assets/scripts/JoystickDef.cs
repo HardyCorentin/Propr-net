@@ -15,34 +15,43 @@ public class JoystickDef : MonoBehaviour
     public Vector2 startPos;
     private Touch touch;
 
+
     // Start is called before the first frame update
     void Start()
     {
         pointA = new Vector2(cercle.transform.position.x, cercle.transform.position.y);
         pointB = new Vector2(cercle.transform.position.x, cercle.transform.position.y);
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
          if (Input.touchCount > 0)
         {
+            //var rectRight = Rect(0, -Screen.height/2, Screen.width / 2, Screen.height);
             Touch touch = Input.GetTouch(0);
-
+            Debug.Log(touch.position.x);
             // Handle finger movements based on touch phase.
+            if (touch.position.x<800){
             switch (touch.phase)
             {
                 // Record initial touch position.
                 case TouchPhase.Began:
-                
-                    debutTouche = true;
-                    pointB = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, Camera.main.transform.position.z));
-                    break;
+                    
+                        debutTouche = true;
+                        pointB = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, Camera.main.transform.position.z));
+                    
+                break;
+                    
                 // Report that a direction has been chosen when the finger is lifted.
                 case TouchPhase.Ended:
                 debutTouche=false;
                     cercle.transform.position = pointA;
                     break;
+            }
             }
         }
 

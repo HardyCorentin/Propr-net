@@ -21,7 +21,6 @@ public class MovePC : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(dir);
         if (Input.GetKey(KeyCode.Z))
         {
             transform.position = new Vector2(player.transform.position.x + 0f, player.transform.position.y + move);
