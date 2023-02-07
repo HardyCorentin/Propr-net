@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,7 +139,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 493.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3099940fb9733344822c0775fa7e0f3
+      internalID: 867871356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 493.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae43db7386b5df846928147eb407b6b6
+      internalID: -324389169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 493.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bebab4c41b91624d9f9dec5c3b7eb99
+      internalID: 1885641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_3
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 493.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388122f6915822b4884ca05380acccde
+      internalID: 1481057758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 493.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82be78944260bcd41a0019d3cc9f9406
+      internalID: 2032055221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f511a4051d43262418ea25ee4c33a12d
+      internalID: 332108571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 395.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9cdc4ebe9c6a04f84855cf4cfd7d99
+      internalID: -1646818187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 395.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d23fcac06978024ca85e71e6850b309
+      internalID: -2107319269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_8
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 395.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a5bd6488d6a3349b33878739046eca
+      internalID: 570748852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_9
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 395.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2171d13559cf8c34f9f6fd9ad941a4f6
+      internalID: -623626015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 297.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8217ae39f0e79bb4daefbab90e365c4e
+      internalID: 1113818142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 297.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7404558d711549149997f7f88bebe36c
+      internalID: -2055967367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 297.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bafdf6dcb9206498611ccac5a39435
+      internalID: -1693488192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_13
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 297.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578897847e3bf53418eb4d5e6f4a1f03
+      internalID: 2122323173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_malborax_vide_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 297.33334
+        width: 98.6
+        height: 98.666664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d36bac5321907c4993344f7229d894e
+      internalID: 1804143842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -150,7 +465,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spritesheet_malborax_vide_6: -1646818187
+      spritesheet_malborax_vide_8: 570748852
+      spritesheet_malborax_vide_7: -2107319269
+      spritesheet_malborax_vide_9: -623626015
+      spritesheet_malborax_vide_10: 1113818142
+      spritesheet_malborax_vide_12: -1693488192
+      spritesheet_malborax_vide_5: 332108571
+      spritesheet_malborax_vide_13: 2122323173
+      spritesheet_malborax_vide_11: -2055967367
+      spritesheet_malborax_vide_1: -324389169
+      spritesheet_malborax_vide_4: 2032055221
+      spritesheet_malborax_vide_14: 1804143842
+      spritesheet_malborax_vide_0: 867871356
+      spritesheet_malborax_vide_2: 1885641
+      spritesheet_malborax_vide_3: 1481057758
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
