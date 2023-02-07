@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoToSCENE : MonoBehaviour
+public class GoToScene : MonoBehaviour
 {
 
-    public string nextSceneName;
-    public void OnTouch()
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadSceneAsync(nextSceneName);
+        SceneManager.LoadScene(sceneName);
     }
+    
 }

@@ -5,8 +5,9 @@ using UnityEngine;
 public class DetectObject : MonoBehaviour
 {
     public float i = 0f;
-    public GameObject currentTouchedObject;
+    private GameObject currentTouchedObject;
 
+    private bool paolo = true;
     void Update()
     {
         if (Input.touchCount > 0)
@@ -31,7 +32,7 @@ public class DetectObject : MonoBehaviour
             Debug.Log(currentTouchedObject.GetComponent<Move>());
             Debug.Log(currentTouchedObject.GetComponent<SpriteRendrer>());*/
             var componentAttackOfGameObject = currentTouchedObject.GetComponent<Attack>();
-            var componentGoToSceneOfGameObject = currentTouchedObject.GetComponent<GoToSCENE>();
+            var componentGoToSceneOfGameObject = currentTouchedObject.GetComponent<GoToScene>();
             var componentActivateReverseModeOfGameObject = currentTouchedObject.GetComponent<ActivateReversemode>();
             var componentLaunchSceneOfGameObject = currentTouchedObject.GetComponent<LaunchScene>();
             var componentJoyStickOfGameObject = currentTouchedObject.GetComponent<JoystickDef>();
@@ -51,16 +52,7 @@ public class DetectObject : MonoBehaviour
                 Debug.Log("BBBBBBBBBBBBBBBBBBH");
             }
             ///////////////////////////////////////////////
-            if (componentGoToSceneOfGameObject != null)
-            {
-                i = 1;
-                if (i == 1)
-                {
-                    componentGoToSceneOfGameObject.OnTouch();
-                }
-                i = 0;
-                componentGoToSceneOfGameObject = null;
-            }
+            
             if (componentJoyStickOfGameObject != null)
             {
                 componentJoyStickOfGameObject.Update();

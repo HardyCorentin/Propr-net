@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class TrashScript : MonoBehaviour
 {
-    public Sprite trash0;
-    public Sprite trash0_thrown;
-    public Sprite trash1;
-    public Sprite trash1_thrown;
+    
+    public List<Sprite>thrownItms;
+    public bool trashthere = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +16,9 @@ public class TrashScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       if (trashthere == true)
+        {
+
+        } 
     }
 }

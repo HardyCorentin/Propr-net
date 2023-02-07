@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour
                 if (hostilite == 1 || hostilite == 2 || hostilite == 3)
                 {
                     clone.GetComponent<EnnemiScript>().hostile = true;
-
+                    
                 }
 
 

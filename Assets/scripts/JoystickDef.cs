@@ -25,102 +25,106 @@ public class JoystickDef : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-         if (Input.touchCount > 0)
+        if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
+            Debug.Log(Screen.width / 2);
+            if (touch.position.x<= Screen.width/2) {
+                // Handle finger movements based on touch phase.
+                switch (touch.phase)
+                {
+                    // Record initial touch position.
+                    case TouchPhase.Began:
 
-            // Handle finger movements based on touch phase.
-            switch (touch.phase)
-            {
-                // Record initial touch position.
-                case TouchPhase.Began:
-                
-                    debutTouche = true;
-                    pointB = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, Camera.main.transform.position.z));
-                    break;
-                // Report that a direction has been chosen when the finger is lifted.
-                case TouchPhase.Ended:
-                debutTouche=false;
-                    cercle.transform.position = pointA;
-                    break;
+                        debutTouche = true;
+                        pointB = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, Camera.main.transform.position.z));
+                        break;
+                    // Report that a direction has been chosen when the finger is lifted.
+                    case TouchPhase.Ended:
+                        debutTouche = false;
+                        cercle.transform.position = pointA;
+                        break;
+                }
             }
-        }
 
-        if (Input.GetMouseButton(0)) {
-            debutTouche = true;
-            pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
-            //pointB = Camera.main.ScreenToWorldPoint(new Vector3(-7,-7,-7));
-        }
-        else {
-            debutTouche = false;
-            //pointB = Camera.main.ScreenToWorldPoint(new Vector3(0,0,0));
-        }
-        if (debutTouche) {
-            Vector2 offset = pointB - pointA;
-            Vector2 direction = Vector2.ClampMagnitude(offset, 1.0f);
-            //Debug.Log(offset);
-            if (offset.x <= 0)
+            if (Input.GetMouseButton(0))
             {
-                player.GetComponent<VictoryorDefeat>().side = false;
-                player.GetComponent<SpriteRenderer>().flipX = true;
-                
+                debutTouche = true;
+                pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
+                //pointB = Camera.main.ScreenToWorldPoint(new Vector3(-7,-7,-7));
             }
-            if (offset.x > 0)
-                {   
+            else
+            {
+                debutTouche = false;
+                //pointB = Camera.main.ScreenToWorldPoint(new Vector3(0,0,0));
+            }
+            if (debutTouche)
+            {
+                Vector2 offset = pointB - pointA;
+                Vector2 direction = Vector2.ClampMagnitude(offset, 1.0f);
+                //Debug.Log(offset);
+                if (offset.x <= 0)
+                {
+                    player.GetComponent<VictoryorDefeat>().side = false;
+                    player.GetComponent<SpriteRenderer>().flipX = true;
+
+                }
+                if (offset.x > 0)
+                {
                     player.GetComponent<VictoryorDefeat>().side = true;
                     player.GetComponent<SpriteRenderer>().flipX = false;
                 }
-            MouvementPerso(direction * 1);
-            cercle.transform.position = new Vector2(pointB.x, pointB.y);
-            cercle.transform.position = pointA + Vector2.ClampMagnitude(offset, 1.0f); //Le probl�me vient plus du tout de l�
-        }
-        
-        if (pointB.x < 0)
-
-            /*if (player.transform.position.x < -3.6f)
-            {
-
-                player.transform.position = new Vector3(player.transform.position.x + 0f, player.transform.position.y, 0f);
+                MouvementPerso(direction * 1);
+                cercle.transform.position = new Vector2(pointB.x, pointB.y);
+                cercle.transform.position = pointA + Vector2.ClampMagnitude(offset, 1.0f); //Le probl�me vient plus du tout de l�
             }
-            else if (player.transform.position.x > -3.6f)
-            {
-                player.transform.position = new Vector3(player.transform.position.x + -speed, player.transform.position.y, 0f);
-            }*/
 
-           if (pointB.x > 0)
-            {
+            if (pointB.x < 0)
 
-                /*if (player.transform.position.x > 6f)
+                /*if (player.transform.position.x < -3.6f)
                 {
 
                     player.transform.position = new Vector3(player.transform.position.x + 0f, player.transform.position.y, 0f);
                 }
-                else
+                else if (player.transform.position.x > -3.6f)
                 {
-                    player.transform.position = new Vector3(player.transform.position.x + speed, player.transform.position.y, 0f);
+                    player.transform.position = new Vector3(player.transform.position.x + -speed, player.transform.position.y, 0f);
                 }*/
-            }
+
+                if (pointB.x > 0)
+                {
+
+                    /*if (player.transform.position.x > 6f)
+                    {
+
+                        player.transform.position = new Vector3(player.transform.position.x + 0f, player.transform.position.y, 0f);
+                    }
+                    else
+                    {
+                        player.transform.position = new Vector3(player.transform.position.x + speed, player.transform.position.y, 0f);
+                    }*/
+                }
             //MouvementPerso(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
         }
 
-       /* void OnTouch()
-        {
+        /* void OnTouch()
+         {
 
-            debutTouche = true;
-            pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
+             debutTouche = true;
+             pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
 
-        }
+         }
 
-        void TouchUp()
-        {
-            debutTouche = false;
-        }*/
+         void TouchUp()
+         {
+             debutTouche = false;
+         }*/
 
         void MouvementPerso(Vector2 direction)
         {
-            
+
             player.transform.Translate(direction * speed);
-            if (player.transform.position.y >=1.5f)
+            if (player.transform.position.y >= 1.5f)
             {
                 player.transform.Translate(direction * -0.07f);
             }
@@ -136,6 +140,7 @@ public class JoystickDef : MonoBehaviour
             {
                 player.transform.Translate(direction * -0.07f);
             }
+        }
     }
-    }
+}
 
