@@ -942,7 +942,7 @@ RectTransform:
   - {fileID: 742610874}
   - {fileID: 58787481}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2725,7 +2725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4860960891386699196, guid: 4ab7269a30b63244c83cbf505ef5c409, type: 3}
       propertyPath: looping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4860960891386699196, guid: 4ab7269a30b63244c83cbf505ef5c409, type: 3}
       propertyPath: simulationSpeed
@@ -3586,7 +3586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8088937347052202259, guid: 53d4e992ac34b084aa9d2d6ef7f6f095, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8088937347052202259, guid: 53d4e992ac34b084aa9d2d6ef7f6f095, type: 3}
       propertyPath: m_LocalScale.x
