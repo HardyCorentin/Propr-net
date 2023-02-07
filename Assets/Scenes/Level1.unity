@@ -2895,6 +2895,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801384566}
+<<<<<<< HEAD
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3ab7db820e365a4a9d0ed526fe80d11, type: 3}
@@ -2923,6 +2924,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   player: {fileID: 1801384566}
+=======
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d495acf213733a4eb10f985a7edd283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1801384566}
+  dO: {fileID: 2052789524}
+>>>>>>> 359584e44fc5ae890f3eda4872a700dc96bbcf20
 --- !u!1 &1824251610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,7 +3227,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f389ed941e171d439d6023bf0ec94b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  point: {x: 0, y: 0, z: 0}
   currentTouchedObject: {fileID: 0}
+  movetoPoint: {fileID: 0}
 --- !u!65 &2052789525
 BoxCollider:
   m_ObjectHideFlags: 0

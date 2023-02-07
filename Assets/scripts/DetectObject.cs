@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class DetectObject : MonoBehaviour
 {
-
+    public Vector3 point;
     public GameObject currentTouchedObject;
+    public MoveToPoint movetoPoint;
 
     void Update()
     {
         if (Input.touchCount > 0)
         {
-            
+
             var tempVector = new Vector3(Input.touches[0].position.x, Input.touches[0].position.y, Camera.main.nearClipPlane);//On recupere la position du doigt
-                                                                                                                      
+            point = tempVector;
             var tempRay = Camera.main.ScreenPointToRay(tempVector); // On Converti la position du doigt en rayon qui va vers l'avant dans le mondedu jeu
-            
-            RaycastHit tempHit; //On cr�e un ensemble d'info de raycast 
+
+            RaycastHit tempHit; //On crée un ensemble d'info de raycast 
 
             if (Physics.Raycast(tempRay.origin, tempRay.direction, out tempHit))
             {//on lance le raycast et on lui dit de remplire les infos avec ce qu'il touche
@@ -34,23 +35,24 @@ public class DetectObject : MonoBehaviour
             var componentGoToSceneOfGameObject = currentTouchedObject.GetComponent<GoToSCENE>();
             var componentActivateReverseModeOfGameObject = currentTouchedObject.GetComponent<ActivateReversemode>();
             var componentLaunchSceneOfGameObject = currentTouchedObject.GetComponent<LaunchScene>();
-            if ( componentMoveOfGameObject != null ) //Si le component move Existe
-                
+            if (componentMoveOfGameObject != null) //Si le component move Existe
+
             {
                 Debug.Log("Ca marche");
                 //Alors on fait des trucs 
                 componentMoveOfGameObject.OnTouch();
 
-                
+
             }
             ////////////////////////////////////////////////
-            if (componentAttackOfGameObject != null) 
+            if (componentAttackOfGameObject != null)
             {
                 componentAttackOfGameObject.Update();
                 Debug.Log("BBBBBBBBBBBBBBBBBBH");
             }
             ///////////////////////////////////////////////
-            if (componentGoToSceneOfGameObject != null){
+            if (componentGoToSceneOfGameObject != null)
+            {
                 componentGoToSceneOfGameObject.OnTouch();
             }
             if (componentActivateReverseModeOfGameObject != null)
@@ -63,9 +65,10 @@ public class DetectObject : MonoBehaviour
                 Debug.Log("Ca marche");
                 //Alors on fait des trucs 
                 componentLaunchSceneOfGameObject.OnTouch();
-
-
             }
+
+            movetoPoint.OnTouch(tempHit.point);
+
 
             /*
             var componentOfGameObject = gameObject.GetComponent<MonComponent>(); //On recupere le component move de l'objet
@@ -79,7 +82,7 @@ public class DetectObject : MonoBehaviour
         }
 
         else
-            
+
         {
             /// //////////////////////////////
             if (currentTouchedObject != null)
@@ -93,7 +96,8 @@ public class DetectObject : MonoBehaviour
                     Debug.Log("BANANAAAAAAAAAAAAAAA10");
                     componentMoveOfGameObject.TouchUp();
                 }
-                else{
+                else
+                {
                     Debug.Log("BANANAAAAAAAAAAAAAAA11");
                     currentTouchedObject = null;
                 }
