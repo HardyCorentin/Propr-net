@@ -29,6 +29,7 @@ public class JoystickDef : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
             Debug.Log(Screen.width / 2);
+            Debug.Log(touch.position.x);
             if (touch.position.x<= Screen.width/2) {
                 // Handle finger movements based on touch phase.
                 switch (touch.phase)
@@ -49,6 +50,7 @@ public class JoystickDef : MonoBehaviour
 
             if (Input.GetMouseButton(0))
             {
+                
                 debutTouche = true;
                 pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
                 //pointB = Camera.main.ScreenToWorldPoint(new Vector3(-7,-7,-7));

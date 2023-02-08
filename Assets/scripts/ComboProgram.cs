@@ -18,7 +18,7 @@ public class ComboProgram : MonoBehaviour
     void Update()
     {
         
-       comboIndicator.GetComponent<SpriteRenderer>().sprite = listeSprite[comboNumber];
+       comboIndicator.GetComponent<UnityEngine.UI.Image>().sprite = listeSprite[comboNumber];
         if (comboNumber>=9) {
             Debug.Log("CLEANING SPREE");
             
