@@ -14,25 +14,38 @@ public class EnnemiScript : MonoBehaviour
     public GameObject dechetAInstantier;
     public Transform fromDechet;
     public Transform toDechet;
+    public bool lancement;
+    public bool lance = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        Throw();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         Ennemi.transform.position = new Vector3(Ennemi.transform.position.x - movetopoint, Ennemi.transform.position.y, Ennemi.transform.position.z);
-
+        if (lancement==true)
+        {
+            if (lance==false)
+            {
+                Debug.Log("ça vient d'ici");
+                lance = true;
+                Throw();
+                
+            }
+        }
     }
 
-    void Throw()
+    public void Throw()
     {
+        
         GameObject dechet = Instantiate(dechetAInstantier,Ennemi.transform.position, Ennemi.transform.rotation);
         var choixSpriteDechet = Random.Range(1,5);
         dechet.GetComponent<SpriteRenderer>().sprite = listeDechets[choixSpriteDechet];
-        dechet.transform.rotation = Quaternion.Lerp(fromDechet.rotation, toDechet.rotation,0.9f*0.1f);
+        dechet.GetComponent<Rigidbody>().AddForce(transform.up * 100);
+        dechet.GetComponent<Rigidbody>().AddForce(transform.right * 100);
     }
 }

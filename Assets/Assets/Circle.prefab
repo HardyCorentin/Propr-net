@@ -118,6 +118,16 @@ MonoBehaviour:
   hostile: 1
   vd: {fileID: 0}
   side: 0
+  listeDechets:
+  - {fileID: -385440175, guid: 222c40cbca737034fbd94d098f2ec2e0, type: 3}
+  - {fileID: -324389169, guid: 5f36a56ee4929e1498d211d22d455532, type: 3}
+  - {fileID: -1347297016, guid: 013097fea5c0b4a45882170a8e1da476, type: 3}
+  - {fileID: -773194375, guid: 03990d4fa3aeaca4cae8e6fc8a24d6a0, type: 3}
+  dechetAInstantier: {fileID: 1203860721847539457, guid: a52553a70d4f709428dc2c823ea13f95, type: 3}
+  fromDechet: {fileID: 0}
+  toDechet: {fileID: 0}
+  lancement: 0
+  lance: 0
 --- !u!1 &8199979182219745778
 GameObject:
   m_ObjectHideFlags: 0

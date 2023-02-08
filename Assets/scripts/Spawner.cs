@@ -10,6 +10,8 @@ public class Spawner : MonoBehaviour
     public float compteur;
     public VictoryorDefeat vd;
     public Sprite spriPac;
+    public Transform from;
+    public Transform to;
 
         // Start is called before the first frame update
     void Start()
@@ -34,16 +36,17 @@ public class Spawner : MonoBehaviour
                 if (hostilite == 0)
                 {
                     clone.GetComponent<EnnemiScript>().hostile = false;
-                    clone.GetComponent<SpriteRenderer>().sprite = spriPac ;
+                    clone.GetComponent<SpriteRenderer>().sprite = spriPac;
                 }
                 if (hostilite == 1 || hostilite == 2 || hostilite == 3)
                 {
                     clone.GetComponent<EnnemiScript>().hostile = true;
+                    clone.GetComponent<EnnemiScript>().fromDechet = from;
+                    clone.GetComponent<EnnemiScript>().toDechet = to;
                 }
 
 
                 clone.transform.position = new Vector2(clone.transform.position.x, hauteur);
-                //clone.transform.position = Vector2.Lerp(clone.transform.position, parent.position,Time.deltaTime);
                 clone.transform.position = clone.transform.position + new Vector3(1, 0, 0);
                 compteur = tempsRespawn;
             }

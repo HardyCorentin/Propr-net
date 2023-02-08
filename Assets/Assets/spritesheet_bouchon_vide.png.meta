@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03990d4fa3aeaca4cae8e6fc8a24d6a0
+guid: 222c40cbca737034fbd94d098f2ec2e0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,41 +113,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_0
+      name: spritesheet_bouchon_vide_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 493.33334
-        width: 98.6
-        height: 98.666664
+        y: 900
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f17f0bd78e282ed489e89da228b6bd07
-      internalID: -773194375
+      spriteID: 2386bc880c45a78438880a46c99087a9
+      internalID: -385440175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_1
+      name: spritesheet_bouchon_vide_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 493.33334
-        width: 98.6
-        height: 98.666664
+        x: 180
+        y: 900
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab4971bf109b2341913621ab90ac062
-      internalID: 1880400105
+      spriteID: 29c666c2c4a54ce4f8fe5d5f28c581ec
+      internalID: 1379008495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_2
+      name: spritesheet_bouchon_vide_2
       rect:
         serializedVersion: 2
-        x: 196
-        y: 493.33334
-        width: 98.6
-        height: 98.666664
+        x: 360
+        y: 900
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dad4ee0f863e50f489f66ac5715a22c0
-      internalID: 1130765222
+      spriteID: fa534e2eed45a834aa65a6b93f11eab0
+      internalID: 285415780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_3
+      name: spritesheet_bouchon_vide_3
       rect:
         serializedVersion: 2
-        x: 294
-        y: 493.33334
-        width: 98.6
-        height: 98.666664
+        x: 540
+        y: 900
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5605d05990a013543851dcd8eafb7096
-      internalID: -1427541087
+      spriteID: 5d89bac10b3663e4ebb9cbbaa9c3d233
+      internalID: 560829997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_4
+      name: spritesheet_bouchon_vide_4
       rect:
         serializedVersion: 2
-        x: 392
-        y: 493.33334
-        width: 98.6
-        height: 98.666664
+        x: 720
+        y: 900
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6eff15c0f8a99049883f26c0ceec173
-      internalID: -1589748378
+      spriteID: a21595415d3740246bcbb21388d898bc
+      internalID: -1502837615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_5
+      name: spritesheet_bouchon_vide_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 395.33334
-        width: 98.6
-        height: 98.666664
+        x: 180
+        y: 720
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c4d03990115dd44a8cf9ebf0a30bb13
-      internalID: -766268085
+      spriteID: e0ab0096b8f496d4cbe698a778a5f38b
+      internalID: 920476646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_6
+      name: spritesheet_bouchon_vide_6
       rect:
         serializedVersion: 2
-        x: 98
-        y: 395.33334
-        width: 98.6
-        height: 98.666664
+        x: 360
+        y: 720
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d8d7500123d019419b6cababcf38a11
-      internalID: -633093299
+      spriteID: d88558b116da7bb41abb4bfd10a2dabe
+      internalID: -241920908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_sachet_vide_7
+      name: spritesheet_bouchon_vide_7
       rect:
         serializedVersion: 2
-        x: 196
-        y: 395.33334
-        width: 98.6
-        height: 98.666664
+        x: 720
+        y: 720
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,113 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c739d34773e3c2f40b582b807353dca9
-      internalID: -1911070604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_sachet_vide_8
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 395.33334
-        width: 98.6
-        height: 98.666664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9a9ca300641bf2468811ac40f0bc04d
-      internalID: -1116588521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_sachet_vide_9
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 395.33334
-        width: 98.6
-        height: 98.666664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab7cc18851a11194aaee095eeecf81db
-      internalID: -1674205005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_sachet_vide_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 297.33334
-        width: 98.6
-        height: 98.666664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99124aa9b1afeb340adb7a4534b9363d
-      internalID: -1937776275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_sachet_vide_11
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 297.33334
-        width: 98.6
-        height: 98.666664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bb560dcd21ad3340aff235be231b322
-      internalID: -1407222715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_sachet_vide_12
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 297.33334
-        width: 98.6
-        height: 98.666664
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31698cc00a9462d4f83fd57976ee3e31
-      internalID: 292068339
+      spriteID: 51c46405f632d91429ef6c498e7dcf71
+      internalID: -1240843764
       vertices: []
       indices: 
       edges: []
@@ -424,19 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spritesheet_sachet_vide_12: 292068339
-      spritesheet_sachet_vide_6: -633093299
-      spritesheet_sachet_vide_0: -773194375
-      spritesheet_sachet_vide_5: -766268085
-      spritesheet_sachet_vide_11: -1407222715
-      spritesheet_sachet_vide_3: -1427541087
-      spritesheet_sachet_vide_1: 1880400105
-      spritesheet_sachet_vide_7: -1911070604
-      spritesheet_sachet_vide_2: 1130765222
-      spritesheet_sachet_vide_4: -1589748378
-      spritesheet_sachet_vide_9: -1674205005
-      spritesheet_sachet_vide_10: -1937776275
-      spritesheet_sachet_vide_8: -1116588521
+      spritesheet_bouchon_vide_0: -385440175
+      spritesheet_bouchon_vide_7: -1240843764
+      spritesheet_bouchon_vide_2: 285415780
+      spritesheet_bouchon_vide_4: -1502837615
+      spritesheet_bouchon_vide_6: -241920908
+      spritesheet_bouchon_vide_1: 1379008495
+      spritesheet_bouchon_vide_5: 920476646
+      spritesheet_bouchon_vide_3: 560829997
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
