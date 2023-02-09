@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class GoToScene : MonoBehaviour
+namespace HardyCorentin
 {
 
-    public void LoadScene(string sceneName)
+    public class GoToScene : MonoBehaviour
     {
-        SceneManager.LoadScene(sceneName);
+
+        public void LoadScene(string sceneName)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+
     }
-    
 }

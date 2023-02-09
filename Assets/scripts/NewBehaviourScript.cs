@@ -2,50 +2,53 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
-public class NewBehaviourScript : MonoBehaviour, IPointerDownHandler,IPointerMoveHandler, IPointerUpHandler
+namespace HardyCorentin
 {
-    public Vector2 positionOld;
-    public Vector2 positionDifference;
-    public Vector2 initialPostion;
-    public GameObject player;
-    public GameObject batonDeJoie;
 
-
-    private bool clicked = false;
-    public void OnPointerDown(PointerEventData eventData)
+    public class NewBehaviourScript : MonoBehaviour, IPointerDownHandler, IPointerMoveHandler, IPointerUpHandler
     {
-        clicked = true;
-        Debug.LogWarning(clicked);
+        public Vector2 positionOld;
+        public Vector2 positionDifference;
+        public Vector2 initialPostion;
+        public GameObject player;
+        public GameObject batonDeJoie;
 
-        }
 
-    public void OnPointerMove(PointerEventData eventData)
-    {
-        if (clicked == true)
+        private bool clicked = false;
+        public void OnPointerDown(PointerEventData eventData)
         {
-            Debug.LogWarning("NINJA");
-            initialPostion = batonDeJoie.transform.position;
-            positionOld = /*eventData.position*/initialPostion;
-            positionDifference = positionOld - positionOld;
-            MouvementPerso(positionDifference);
-            //player.transform.position = new Vector2(positionDifference.x,positionDifference.y);
+            clicked = true;
+            Debug.LogWarning(clicked);
+
         }
 
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        if(clicked == false)
+        public void OnPointerMove(PointerEventData eventData)
         {
-             
+            if (clicked == true)
+            {
+                Debug.LogWarning("NINJA");
+                initialPostion = batonDeJoie.transform.position;
+                positionOld = /*eventData.position*/initialPostion;
+                positionDifference = positionOld - positionOld;
+                MouvementPerso(positionDifference);
+                //player.transform.position = new Vector2(positionDifference.x,positionDifference.y);
+            }
+
         }
-        //throw new System.NotImplementedException();
-    }
-    void MouvementPerso(Vector2 positionDifference)
-    {
 
-        player.transform.Translate(positionDifference * 100);
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            if (clicked == false)
+            {
 
+            }
+            //throw new System.NotImplementedException();
+        }
+        void MouvementPerso(Vector2 positionDifference)
+        {
+
+            player.transform.Translate(positionDifference * 100);
+
+        }
     }
 }
