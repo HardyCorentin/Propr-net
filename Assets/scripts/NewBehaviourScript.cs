@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class NewBehaviourScript : MonoBehaviour, IPointerDownHandler,IPointerMoveHandler, IPointerUpHandler
-{
-    public Vector2 positionOld;
+//public class NewBehaviourScript : MonoBehaviour, IPointerDownHandler,IPointerMoveHandler, IPointerUpHandler
+//{
+    /*public Vector2 positionOld;
     public Vector2 positionDifference;
     public Vector2 initialPostion;
     public GameObject player;
@@ -13,6 +13,8 @@ public class NewBehaviourScript : MonoBehaviour, IPointerDownHandler,IPointerMov
 
 
     private bool clicked = false;
+
+
     public void OnPointerDown(PointerEventData eventData)
     {
         clicked = true;
@@ -26,7 +28,7 @@ public class NewBehaviourScript : MonoBehaviour, IPointerDownHandler,IPointerMov
         {
             Debug.LogWarning("NINJA");
             initialPostion = batonDeJoie.transform.position;
-            positionOld = /*eventData.position*/initialPostion;
+            positionOld = eventData.positioninitialPostion;
             positionDifference = positionOld - positionOld;
             MouvementPerso(positionDifference);
             //player.transform.position = new Vector2(positionDifference.x,positionDifference.y);
@@ -47,5 +49,5 @@ public class NewBehaviourScript : MonoBehaviour, IPointerDownHandler,IPointerMov
 
         player.transform.Translate(positionDifference * 100);
 
-    }
-}
+    }*/
+//}

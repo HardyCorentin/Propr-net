@@ -297,6 +297,8 @@ GameObject:
   - component: {fileID: 151264745}
   - component: {fileID: 151264744}
   - component: {fileID: 151264747}
+  - component: {fileID: 151264748}
+  - component: {fileID: 151264749}
   m_Layer: 5
   m_Name: JoystickButton
   m_TagString: Untagged
@@ -367,7 +369,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 151264745}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 151264742}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &151264745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,16 +427,49 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151264742}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 731388ec3eb25374c9220d789e080621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOld: {x: 0, y: 0}
-  positionDifference: {x: 0, y: 0}
+  pointA: {x: 0, y: 0}
+  pointB: {x: 0, y: 0}
   initialPostion: {x: 0, y: 0}
   player: {fileID: 1028626580}
   batonDeJoie: {fileID: 151264742}
+  fondBDDJ: {fileID: 0}
+  clicked: 0
+--- !u!114 &151264748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151264742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e771bcd51d02fae4c93aa717c309d75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointA: {x: 0, y: 0}
+  pointB: {x: 0, y: 0}
+  initialPostion: {x: 0, y: 0}
+  player: {fileID: 1028626580}
+  batonDeJoie: {fileID: 151264742}
+  fondBDDJ: {fileID: 1502107786}
+--- !u!114 &151264749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151264742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4465e2bde91194db07fe2038e17df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystickRef: {fileID: 151264742}
 --- !u!1001 &164729640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3422,7 +3469,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052789521}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f389ed941e171d439d6023bf0ec94b3, type: 3}
   m_Name: 
