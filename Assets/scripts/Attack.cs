@@ -83,7 +83,7 @@ public class Attack : MonoBehaviour
                         //play anim 
                         vd.hp = vd.hp - 0.335f;
                         Destroy(other.transform.gameObject);
-                        Destroy(other.collider.GetComponent<EnnemiScript>().dechet);
+                        //Destroy(other.collider.GetComponent<EnnemiScript>().dechet);
                     }
                     else
                     {
