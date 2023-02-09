@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class Openingposition : MonoBehaviour
 {
     public GameObject player;
@@ -17,4 +17,5 @@ public class Openingposition : MonoBehaviour
     {
         
     }
+}
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 [CreateAssetMenu(fileName = "NewMusic", menuName = "Musique", order = 0)]
 public class TestCreaMusique : ScriptableObject
 {
@@ -10,4 +10,5 @@ public class TestCreaMusique : ScriptableObject
     public string nom;
     public string nomArtiste;
     public Sprite jaquette;
+}
 }

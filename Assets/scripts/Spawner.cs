@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class Spawner : MonoBehaviour
 {
     public EnnemiScript objetASpawner;
@@ -53,4 +53,5 @@ public class Spawner : MonoBehaviour
         }
 
     }
+}
 }

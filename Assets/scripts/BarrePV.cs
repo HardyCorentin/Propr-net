@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace Alexis{
 public class BarrePV : MonoBehaviour
 {
     public VictoryorDefeat vd;
@@ -19,4 +20,4 @@ public class BarrePV : MonoBehaviour
         fillbarre.fillAmount = vd.hp;
     }
 }
-
+}

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class ReverseMode : MonoBehaviour
 {
     public bool reverseModeActivated = false;
@@ -20,4 +20,5 @@ public class ReverseMode : MonoBehaviour
     {
      
     }
+}
 }

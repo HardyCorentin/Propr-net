@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+namespace Alexis{
 public class VictoryorDefeat : MonoBehaviour
 {
     public float hp =1f;
@@ -33,4 +33,5 @@ public class VictoryorDefeat : MonoBehaviour
             SceneManager.LoadScene(winScene);
         }
     }
+}
 }

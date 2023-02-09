@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class Move : MonoBehaviour
 {
     public GameObject currentTouchedObject;
@@ -98,4 +98,5 @@ public class Move : MonoBehaviour
             player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + moveUp, 0f);
         }
     }*/
+}
 }

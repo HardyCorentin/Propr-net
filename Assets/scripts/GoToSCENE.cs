@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+namespace Alexis{
 public class GoToSCENE : MonoBehaviour
 {
 
@@ -11,4 +12,5 @@ public class GoToSCENE : MonoBehaviour
     {
         SceneManager.LoadScene(nextSceneName);
     }
+}
 }

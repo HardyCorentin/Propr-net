@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Alexis{
 public class ActivateReversemode : MonoBehaviour
 {
     public ReverseMode reversemodeactivater;
@@ -27,4 +28,5 @@ public class ActivateReversemode : MonoBehaviour
             reversemodeactivater.reverseModeActivated = false;
         }
     }
+}
 }

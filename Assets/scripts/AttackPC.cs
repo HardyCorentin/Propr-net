@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Alexis{
 public class AttackPC : MonoBehaviour
 {
     public GameObject player;
@@ -63,4 +64,5 @@ public class AttackPC : MonoBehaviour
 
     }
 
+}
 }

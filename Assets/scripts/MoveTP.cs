@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class MoveTP : MonoBehaviour
 {
     public Vector3 targetPosition;
@@ -31,4 +31,5 @@ public class MoveTP : MonoBehaviour
         player.transform.position = targetPosition;
     }
 
+}
 }

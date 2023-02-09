@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class EnnemiScript : MonoBehaviour
 {
     public GameObject Ennemi;
@@ -12,10 +12,13 @@ public class EnnemiScript : MonoBehaviour
     public bool side = false;
     public List<Sprite> listeDechets = new List<Sprite>(); 
     public GameObject dechetAInstantier;
+    public GameObject dechet; 
     public Transform fromDechet;
     public Transform toDechet;
     public bool lancement;
     public bool lance = false;
+    public bool destroyDechet = false;
+    //private GameObject dechet;
 
     // Start is called before the first frame update
     void Start()
@@ -41,11 +44,19 @@ public class EnnemiScript : MonoBehaviour
 
     public void Throw()
     {
-        
-        GameObject dechet = Instantiate(dechetAInstantier,Ennemi.transform.position, Ennemi.transform.rotation);
-        var choixSpriteDechet = Random.Range(1,5);
-        dechet.GetComponent<SpriteRenderer>().sprite = listeDechets[choixSpriteDechet];
-        dechet.GetComponent<Rigidbody>().AddForce(transform.up * 100);
-        dechet.GetComponent<Rigidbody>().AddForce(transform.right * 100);
+        if (destroyDechet==false){
+            dechet = Instantiate(dechetAInstantier,Ennemi.transform.position, Ennemi.transform.rotation);
+            var choixSpriteDechet = Random.Range(1,5);
+            dechet.GetComponent<SpriteRenderer>().sprite = listeDechets[choixSpriteDechet];
+            dechet.GetComponent<Rigidbody2D>().AddForce(transform.up * 100);
+            dechet.GetComponent<Rigidbody2D>().AddForce(transform.right * 100);
+        }
+        if (destroyDechet==true)
+        {
+            
+            // Destroy(dechet);
+            
+        }
     }
+}
 }

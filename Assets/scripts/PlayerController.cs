@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class PlayerController : MonoBehaviour
 {
     private Animator thisAnim;
@@ -17,4 +17,5 @@ public class PlayerController : MonoBehaviour
         var h = Input.GetAxis("Horizontal");
         thisAnim.SetFloat("Speed", Mathf.Abs(h));
     }
+}
 }

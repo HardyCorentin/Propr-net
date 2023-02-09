@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+namespace Alexis{
 public class LaunchScene : MonoBehaviour
 {
     //public Musique morceau;
@@ -40,4 +40,4 @@ public class LaunchScene : MonoBehaviour
         SceneManager.LoadScene(nextSceneName);
     }
 }
-
+}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Alexis{
 public class ComboProgram : MonoBehaviour
 {
     public GameObject comboIndicator;
@@ -21,4 +22,5 @@ public class ComboProgram : MonoBehaviour
         
         //clone.GetComponent<SpriteRenderer>().sprite = spriPac
     }
+}
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class JoystickDef : MonoBehaviour
 {
     public GameObject player;
@@ -131,4 +131,5 @@ public class JoystickDef : MonoBehaviour
             
         }
     }
+}
 

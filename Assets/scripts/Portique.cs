@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class Portique : MonoBehaviour
 {
     public GameObject PDS;
@@ -31,4 +31,5 @@ public class Portique : MonoBehaviour
             }
         }
     }
+}
 }

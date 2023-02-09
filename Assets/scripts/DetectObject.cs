@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class DetectObject : MonoBehaviour
 {
 
@@ -101,4 +101,5 @@ public class DetectObject : MonoBehaviour
         }
 
     }
+}
 }

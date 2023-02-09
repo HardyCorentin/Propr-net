@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class TriggerDechet : MonoBehaviour
 {
     public GameObject zoneTrigger;
@@ -22,4 +22,5 @@ public class TriggerDechet : MonoBehaviour
             }
         }
     }
+}
 }

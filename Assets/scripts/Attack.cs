@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Alexis{
 public class Attack : MonoBehaviour
 {
     public GameObject player;
@@ -75,15 +76,12 @@ public class Attack : MonoBehaviour
                             soundEffects.clip = cri3;
                         }
                         soundEffects.Play(0);
-                        voix.transform.position = player.transform.position + new Vector3(0.044f,1.206f,0.33f);
+                        other.collider.GetComponent<EnnemiScript>().movetopoint = 0;
+                        voix.transform.position = player.transform.position + new Vector3(0.044f,1f,0.33f);
                         voix.Play();
-                        particleSystem.transform.position = other.point;
-                        particleSystem.Play();
+                        mortEnnemi(other);
                         cp.comboNumber = 0;
-                        //play anim 
                         vd.hp = vd.hp - 0.335f;
-                        Destroy(other.transform.gameObject);
-                        //Destroy(other.collider.GetComponent<EnnemiScript>().dechet);
                     }
                     else
                     {
@@ -100,11 +98,8 @@ public class Attack : MonoBehaviour
                         soundEffects.Play(0);
                         voix.transform.position = player.transform.position + new Vector3(0.044f,1.206f,0.33f);
                         voix.Play();
-                        particleSystem.transform.position = other.point;
-                        particleSystem.Play();
-                        cp.comboNumber = cp.comboNumber + 1;
-                        //play anim 
-                        Destroy(other.transform.gameObject);
+                        
+                      mortEnnemi(other);
                     }
                 }
             }
@@ -151,5 +146,14 @@ public class Attack : MonoBehaviour
             }
     }
    
+}
+    void mortEnnemi(RaycastHit other){
+        particleSystem.transform.position = other.point;
+        particleSystem.Play();
+        Destroy(other.transform.GetComponent<EnnemiScript>().dechet);
+        Destroy(other.transform.gameObject);
+        // other.collider.GetComponent<EnnemiScript>().destroyDechet=true;
+        // other.collider.GetComponent<EnnemiScript>().Throw();
+    }   
 }
 }

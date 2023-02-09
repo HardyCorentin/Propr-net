@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+namespace Alexis{
 public class LoadParameters : MonoBehaviour
 {
     public List<TestCreaMusique> listeniv;
@@ -26,4 +26,5 @@ public class LoadParameters : MonoBehaviour
     {
 
     }
+}
 }
