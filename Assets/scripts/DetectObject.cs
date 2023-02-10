@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace HardyCorentin
+namespace Alexis
 {
 
     public class DetectObject : MonoBehaviour

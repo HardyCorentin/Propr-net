@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Alexis{
 public class ActivateReversemode : MonoBehaviour
 {
-    public ReverseMode reversemodeactivater;
+    //public ReverseMode reversemodeactivater;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +19,14 @@ public class ActivateReversemode : MonoBehaviour
     }
     public void onTouch()
     {
-        if(reversemodeactivater.reverseModeActivated == false)
+        /*if(reversemodeactivater.reverseModeActivated == false)
         {
             reversemodeactivater.reverseModeActivated = true;
         }
         if (reversemodeactivater.reverseModeActivated == true)
         {
             reversemodeactivater.reverseModeActivated = false;
-        }
+        }*/
     }
 }
 }
