@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 namespace HardyCorentin
 {
 
-    public class BarrePV : MonoBehaviour
+    public class TrashScript : MonoBehaviour
     {
-        public VictoryorDefeat vd;
-        public Image fillbarre;
+
+        public List<Sprite> thrownItms;
+        public bool trashthere = false;
         // Start is called before the first frame update
         void Start()
         {
@@ -18,8 +18,10 @@ namespace HardyCorentin
         // Update is called once per frame
         void Update()
         {
-            fillbarre.fillAmount = vd.hp;
+            if (trashthere == true)
+            {
+
+            }
         }
     }
 }
-

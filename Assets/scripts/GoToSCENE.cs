@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-namespace Alexis{
-public class GoToSCENE : MonoBehaviour
+namespace HardyCorentin
 {
 
-    public string nextSceneName;
-    public void OnTouch()
+    public class GoToScene : MonoBehaviour
     {
-        SceneManager.LoadScene(nextSceneName);
+
+        public void LoadScene(string sceneName)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+
     }
-}
 }
