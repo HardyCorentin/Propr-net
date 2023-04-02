@@ -49,7 +49,7 @@ public class EnnemiScript : MonoBehaviour
             var choixSpriteDechet = Random.Range(1,5);
             dechet.GetComponent<SpriteRenderer>().sprite = listeDechets[choixSpriteDechet];
             dechet.GetComponent<Rigidbody2D>().AddForce(transform.up * 100);
-            dechet.GetComponent<Rigidbody2D>().AddForce(transform.right * 100);
+            dechet.GetComponent<Rigidbody2D>().AddForce(transform.right * 75);
         }
         if (destroyDechet==true)
         {

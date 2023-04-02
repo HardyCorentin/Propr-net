@@ -8,7 +8,7 @@ namespace Alexis
     public class JoystickViaButtonsMovement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
     {
         public Vector2 direction;
-        //public MovePC movePC;
+        public MovePC movePC;
 
         // Update is called once per frame
         public void Update()
@@ -17,18 +17,18 @@ namespace Alexis
         }
         public void Validate()
         {
-            //movePC.joystick = this;
+            movePC.joystick = this;
         }
 
         public void Unvalidate(bool absolute)
         {
             if (absolute)
             {
-                //movePC.joystick = null;
+                movePC.joystick = null;
             }
             else
             {
-                //movePC.joystick = movePC.joystick == this ? null : movePC.joystick;
+                movePC.joystick = movePC.joystick == this ? null : movePC.joystick;
             }
         }
 
