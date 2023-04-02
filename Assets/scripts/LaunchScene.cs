@@ -29,7 +29,9 @@ namespace  Alexis
             Debug.Log("fswfesfeffs");
             PlayerPrefs.SetInt("choix", index);
             //DontDestroyOnLoad(conserve);
-            SceneManager.LoadScene("SampleScene");
+            var source = GameObject.FindObjectOfType<AudioSource>();
+            source.Pause();
+            SceneManager.LoadScene(nextSceneName);
         }
 
 
@@ -39,6 +41,8 @@ namespace  Alexis
             Debug.Log("fswfesfeffs");
             PlayerPrefs.SetInt("choix", index);
             //DontDestroyOnLoad(conserve);
+            var source = GameObject.FindObjectOfType<AudioSource>();
+            source.Pause();
             SceneManager.LoadScene(nextSceneName);
         }
     }

@@ -4213,6 +4213,10 @@ MonoBehaviour:
   cp: {fileID: 1648939473}
   particleSystem: {fileID: 1169870680}
   voix: {fileID: 159319701}
+  soundEffects: {fileID: 0}
+  cri1: {fileID: 0}
+  cri2: {fileID: 0}
+  cri3: {fileID: 0}
 --- !u!1 &1745650651
 GameObject:
   m_ObjectHideFlags: 0
@@ -4504,6 +4508,10 @@ MonoBehaviour:
   cp: {fileID: 1648939473}
   particleSystem: {fileID: 1952115370}
   voix: {fileID: 2068976578}
+  soundEffects: {fileID: 2052789527}
+  cri1: {fileID: 8300000, guid: 97616cff5b5632f4f8fde496c0e75ee0, type: 3}
+  cri2: {fileID: 8300000, guid: 5b7c00881b2e490458096ac3eb3dbcae, type: 3}
+  cri3: {fileID: 8300000, guid: 80c495e35603f2640a59ff2bd0a237d6, type: 3}
 --- !u!65 &1824251614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4791,7 +4799,7 @@ GameObject:
   - component: {fileID: 2052789527}
   - component: {fileID: 2052789528}
   m_Layer: 0
-  m_Name: Square (6)
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

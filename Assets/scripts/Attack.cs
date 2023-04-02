@@ -13,6 +13,10 @@ namespace Alexis
         public ComboProgram cp;
         public ParticleSystem particleSystem;
         public ParticleSystem voix;
+        public AudioSource soundEffects;
+        public AudioClip cri1;
+        public AudioClip cri2;
+        public AudioClip cri3;
 
         // Start is called before the first frame update
         void Start()
@@ -35,7 +39,17 @@ namespace Alexis
                     case TouchPhase.Began:
                         if (player.GetComponent<VictoryorDefeat>().side == true)
                         {
-
+                        var choixCri = Random.Range(1,4);
+                        if (choixCri==1){
+                            soundEffects.clip = cri1;
+                        }
+                        if (choixCri==2){
+                            soundEffects.clip = cri2;
+                        }
+                        if (choixCri==3){
+                            soundEffects.clip = cri3;
+                        }
+                        soundEffects.Play(0);
                             if (Physics.Raycast(player.transform.position, player.transform.right, out var other, 3f))
                             {
                                 Debug.Log("click");
@@ -49,6 +63,17 @@ namespace Alexis
                                     }
                                     if (other.collider.GetComponent<EnnemiScript>().hostile == false)
                                     {
+                                        var choixCri3 = Random.Range(1,4);
+                                        if (choixCri3==1){
+                                            soundEffects.clip = cri1;
+                                        }
+                                        if (choixCri3==2){
+                                            soundEffects.clip = cri2;
+                                        }
+                                        if (choixCri3==3){
+                                            soundEffects.clip = cri3;
+                                        }
+                                        soundEffects.Play(0);
                                         voix.transform.position = player.transform.position + new Vector3(0.044f, 1.206f, 0.33f);
                                         voix.Play();
                                         particleSystem.transform.position = other.point;
@@ -60,6 +85,17 @@ namespace Alexis
                                     }
                                     else
                                     {
+                                        var choixCri2 = Random.Range(1,4);
+                                        if (choixCri2==1){
+                                            soundEffects.clip = cri1;
+                                        }
+                                        if (choixCri2==2){
+                                            soundEffects.clip = cri2;
+                                        }
+                                        if (choixCri2==3){
+                                            soundEffects.clip = cri3;
+                                        }
+                                        soundEffects.Play(0);
                                         voix.transform.position = player.transform.position + new Vector3(0.044f, 1.206f, 0.33f);
                                         voix.Play();
                                         particleSystem.transform.position = other.point;
