@@ -22,9 +22,20 @@ namespace Alexis
             if (joystick != null)
             {
                 var dir = (Vector3)(joystick.direction.normalized * speed);
-                transform.position += dir;
-                if(player.transform.position.x >= 13f){
-                    player.transform.position = new Vector2 (player.transform.position.x - 0.5f, player.transform.position.y+0);
+                if(transform.position.x >= 2f & dir.x>0f){
+                    transform.position = new Vector3 (transform.position.x + 0f, transform.position.y+dir,transform.position.z);
+                }
+                else if(transform.position.x <= -2f & dir.x<0f){
+                    transform.position = new Vector3 (transform.position.x - 0f, transform.position.y+dir,transform.position.z);
+                }
+                else if(transform.position.y >= 2f & dir.y>0f){
+                    transform.position = new Vector3 (transform.position.x + dir, transform.position.y+0f,transform.position.z);
+                }
+                else if(transform.position.y <= -2f & dir.y<0f){
+                   transform.position = new Vector3 (transform.position.x +dir, transform.position.y-0f,transform.position.z);
+                }
+                else {
+                    transform.position += dir;
                 }
                 
             }
