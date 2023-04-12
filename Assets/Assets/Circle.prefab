@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1872154542996070291}
   - component: {fileID: 4001060053199710886}
   - component: {fileID: 3284620187296055095}
+  - component: {fileID: 6030776272729507002}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2987682330206039538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.9033704, y: -0.01353226, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3659367611340131924}
@@ -124,10 +125,32 @@ MonoBehaviour:
   - {fileID: -1347297016, guid: 013097fea5c0b4a45882170a8e1da476, type: 3}
   - {fileID: -773194375, guid: 03990d4fa3aeaca4cae8e6fc8a24d6a0, type: 3}
   dechetAInstantier: {fileID: 1203860721847539457, guid: a52553a70d4f709428dc2c823ea13f95, type: 3}
+  dechet: {fileID: 0}
   fromDechet: {fileID: 0}
   toDechet: {fileID: 0}
   lancement: 0
   lance: 0
+  destroyDechet: 0
+--- !u!95 &6030776272729507002
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2987682330206039538}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 39b65e28dfa8abc4ba09e6fd6f90a2ed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8199979182219745778
 GameObject:
   m_ObjectHideFlags: 0

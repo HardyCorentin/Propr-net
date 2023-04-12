@@ -22,13 +22,13 @@ namespace Alexis
             if (joystick != null)
             {
                 var dir = (Vector3)(joystick.direction.normalized * speed);
-                if(transform.position.x >= 2f & dir.x>0f){
+                if(transform.position.x >= 12.3f & dir.x>0f){
                     transform.position = new Vector3 (transform.position.x, transform.position.y+dir.y,transform.position.z);
                 }
-                else if(transform.position.x <= -2f & dir.x<0f){
+                else if(transform.position.x <= -12.3f & dir.x<0f){
                     transform.position = new Vector3 (transform.position.x, transform.position.y+dir.y,transform.position.z);
                 }
-                else if(transform.position.y >= 2f & dir.y>0f){
+                else if(transform.position.y >= 1.6f & dir.y>0f){
                     transform.position = new Vector3 (transform.position.x + dir.x, transform.position.y,transform.position.z);
                 }
                 else if(transform.position.y <= -2f & dir.y<0f){
@@ -44,10 +44,5 @@ namespace Alexis
 
         }
 
-
-        private void OnGUI()
-        {
-            GUILayout.Label("Current joystick is " + joystick);
-        }
     }
 }

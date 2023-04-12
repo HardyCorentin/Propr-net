@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4b4bbc8b844c77449379fb5b5c5a8b4, type: 3}
-  m_Name: VoidLoop
+  m_Name: TropPris
   m_EditorClassIdentifier: 
-  track: {fileID: 8300000, guid: 91b5c86bd3b1dfe428cc8f06c7defd0c, type: 3}
-  bpm: 120
-  nom: VoidLoop
-  nomArtiste: BIRRD
-  jaquette: {fileID: 21300000, guid: f1eef37a3fbcc3341a52f25001ecd8de, type: 3}
+  track: {fileID: 8300000, guid: 9379a662b687d6f43b27a8d9915c4fe0, type: 3}
+  bpm: 0
+  nom: Trop Pris
+  nomArtiste: Tago Mago
+  jaquette: {fileID: 21300000, guid: 308cc5761651b2344bc0d44189456ac0, type: 3}

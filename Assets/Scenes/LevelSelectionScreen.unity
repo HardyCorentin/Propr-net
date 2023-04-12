@@ -400,7 +400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f389ed941e171d439d6023bf0ec94b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  i: 0
 --- !u!65 &770803786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -493,6 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43dd0aa62b55f54a8d6879b62c88b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 0}
 --- !u!1 &1283755897
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,9 +593,8 @@ MonoBehaviour:
   listeniv:
   - {fileID: 11400000, guid: 93075826ae785ff47b20520ea1161925, type: 2}
   - {fileID: 11400000, guid: 593b7d8f27427b74ca6f90bb6fe5bd62, type: 2}
+  - {fileID: 11400000, guid: 96b78fa9187c4324cbcba2db59c1a926, type: 2}
   panneau: {fileID: 7366892282244828569, guid: 306b8a33b59de89449ab36c142ee0edf, type: 3}
-  nomMusique: {fileID: 4516656656386794809, guid: bc4593a9b3cd5a94094941a976af3570, type: 3}
-  nomArtiste: {fileID: 0}
   xPan: -5.5
   xTit: -5.5
   yPan: 0

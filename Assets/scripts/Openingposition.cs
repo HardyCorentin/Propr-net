@@ -9,7 +9,7 @@ public class Openingposition : MonoBehaviour
     void Start()
     {
        
-      player.transform.position = new Vector3(-2f, -3f, 0f);
+      player.transform.position = new Vector3(-2f, 1f, 0f);
     }
 
     // Update is called once per frame

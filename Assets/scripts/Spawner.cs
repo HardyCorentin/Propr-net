@@ -30,7 +30,8 @@ public class Spawner : MonoBehaviour
             compteur -= Time.deltaTime;
             if (compteur <= 0)
             {
-                var hauteur = Random.Range(-4, 1);
+                var hauteur = Random.Range(1, 4);
+                    var vraihauteur = 0f;
                 var hostilite = Random.Range(0, 4);
                 EnnemiScript clone = Instantiate(objetASpawner, parent.position, parent.rotation);
                 if (hostilite == 0)
@@ -44,10 +45,23 @@ public class Spawner : MonoBehaviour
                     clone.GetComponent<EnnemiScript>().fromDechet = from;
                     clone.GetComponent<EnnemiScript>().toDechet = to;
                 }
+                    if (hauteur == 1)
+                    {
+                        vraihauteur = -3.25f;
+                    }
+                    if (hauteur == 2)
+                    {
+                        vraihauteur = -1.825f;
+                    }
+                    if (hauteur == 3)
+                    {
+                        vraihauteur= 0.4f;
+                    }
 
 
-                clone.transform.position = new Vector2(clone.transform.position.x, hauteur);
-                clone.transform.position = clone.transform.position + new Vector3(1, 0, 0);
+                    clone.transform.position = new Vector2(clone.transform.position.x, vraihauteur);
+                   
+                    clone.transform.position = clone.transform.position + new Vector3(1, 0, 0);
                 compteur = tempsRespawn;
             }
         }

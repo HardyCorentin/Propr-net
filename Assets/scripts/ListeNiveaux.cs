@@ -8,8 +8,8 @@ public class ListeNiveaux : MonoBehaviour
 {
     public List<TestCreaMusique> listeniv;
     public GameObject panneau;
-    public TextMeshPro nomMusique;
-    public TextMeshPro nomArtiste;
+    //public TextMeshPro nomMusique;
+    //public TextMeshPro nomArtiste;
     public float xPan = -5.5f;
     public float xTit = -5.5f;
     public int yPan = 0;
@@ -24,9 +24,9 @@ public class ListeNiveaux : MonoBehaviour
             var newObject = Instantiate(panneau, new Vector2(xPan, yPan), Quaternion.identity);
             newObject.GetComponent<SpriteRenderer>().sprite = listeniv[i].jaquette;
             xPan = xPan + 6.75f;
-            var newText = Instantiate(nomMusique, new Vector2(xTit, 3.5f), Quaternion.identity);
+            //var newText = Instantiate(nomMusique, new Vector2(xTit, 3.5f), Quaternion.identity);
             xTit = xTit + 6.75f;
-            newText.text = listeniv[i].nom;
+            //newText.text = listeniv[i].nom;
             //newObject.GetComponent<LaunchScene>().morceau = listeniv[i];
             newObject.GetComponent<LaunchScene>().index = i;
         }
